@@ -22,7 +22,53 @@
             <h2>Bize Ulaşın</h2>
             <p>Görüş ve önerileriniz için aşağıdaki formu doldurabilirsiniz.</p>
 
-            <p>Form alanı hazırlanıyor...</p>
+            <form action="#" method="POST">
+                
+                <div>
+                    <label for="adsoyad">Adınız Soyadınız</label><br>
+                    <input type="text" id="adsoyad" name="adsoyad" required autocomplete="name" placeholder="Örn. Başak Zeynep Tıkız">
+                </div>
+                <br>
+
+                <div>
+                    <label for="eposta">E-posta Adresiniz</label><br>
+                    <input type="email" id="eposta" name="eposta" required autocomplete="email" placeholder="ornek@gmail.com">
+                </div>
+                <br>
+
+                <div>
+                    <label for="telefon">Telefon Numaranız</label><br>
+                    <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="0530...">
+                </div>
+                <br>
+
+                <div>
+                    <label for="parola">Parola (En az 8 karakter)</label><br>
+                    <input type="password" id="parola" name="parola" required minlength="8" autocomplete="new-password">
+                </div>
+                <br>
+
+                <div>
+                    <label for="konu">İletişim Konusu</label><br>
+                    <select id="konu" name="konu" required>
+                        <option value="">Lütfen bir konu seçin...</option>
+                        <option value="oneri">Öneri ve İstek</option>
+                        <option value="hata">Hata Bildirimi</option>
+                        <option value="diger">Diğer</option>
+                    </select>
+                </div>
+                <br>
+
+                <div>
+                    <label for="mesaj">Mesajınız</label><br>
+                    <textarea id="mesaj" name="mesaj" rows="4" required minlength="10" placeholder="Mesajınızı en az 10 karakter olacak şekilde yazın..."></textarea>
+                </div>
+                <br>
+
+                <button type="submit">Gönder</button>
+
+            </form>
+            
         </section>
     </main>
 
